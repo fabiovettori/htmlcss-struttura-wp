@@ -12,10 +12,46 @@ header {
     width: 100%;
     height: 200px;
     background-color: yellow;
+    margin-bottom: 10px;
+}
+
+aside.left {
+    width: calc(30% - 5px);
+    height: 300px;
+    background-color: plum;
+    float: left;
+    margin-right: 10px;
+}
+
+aside.right {
+    width: calc(30% - 5px);
+    height: 200px;
+    background-color: plum;
+    float: left;
+    margin-left: 10px;
+}
+
+aside.right.bottom {
+    margin-top: 10px;
+}
+
+main {
+    width: calc(40% - 10px);
+    height: 500px;
+    background-color: purple;
+    float: left;
 }
 
 footer {
     width: 100%;
     height: 200px;
     background-color: lightblue;
-};
+    float: left;
+    margin-top: 10px;
+}
+
+.container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
